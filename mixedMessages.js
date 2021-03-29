@@ -18,8 +18,10 @@ function nameGen() {
 // final generator, uses nameGen and numGen for motto
 function generateHero() {
     let name = nameGen();
-    let motto = mottoWords[numGen(mottoWords.length)];
-    console.log(`I am ${name}! Here I come to ${motto} the day!`);
+    let word = mottoWords[numGen(mottoWords.length)];
+    let motto = `I am ${name}!<br>Here I come to ${word} the day!`
+    //console.log(motto);
+    document.getElementById('motto').innerHTML = motto
 }
 
 generateHero()
