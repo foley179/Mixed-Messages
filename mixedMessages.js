@@ -24,4 +24,4 @@ function generateHero() {
     document.getElementById('motto').innerHTML = motto
 }
 
-generateHero()
+//generateHero()
